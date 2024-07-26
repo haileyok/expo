@@ -52,6 +52,7 @@ class VideoPlayer(val context: Context, appContext: AppContext, source: VideoSou
   var status: PlayerStatus = IDLE
   var requiresLinearPlayback = false
   var staysActiveInBackground = false
+  var showSubtitleButton = false
   var preservesPitch = false
     set(preservesPitch) {
       field = preservesPitch

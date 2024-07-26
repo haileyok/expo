@@ -261,6 +261,16 @@ class VideoModule : Module() {
           }
         }
 
+      Property("showSubtitleButton")
+        .get { ref: VideoPlayer ->
+          ref.showSubtitleButton
+        }
+        .set { ref: VideoPlayer, showSubtitleButton: Boolean ->
+          appContext.mainQueue.launch {
+            ref.showSubtitleButton = showSubtitleButton
+          }
+        }
+
       Function("play") { ref: VideoPlayer ->
         appContext.mainQueue.launch {
           ref.player.play()

@@ -34,6 +34,7 @@ class FullscreenPlayerActivity : Activity() {
     hideStatusBar()
     setupFullscreenButton()
     playerView.applyRequiresLinearPlayback(videoView.videoPlayer?.requiresLinearPlayback ?: false)
+    playerView.setShowSubtitleButton(videoView.videoPlayer?.showSubtitleButton ?: false)
     playerView.addOnLayoutChangeListener { _, _, _, _, _, _, _, _, _ ->
       // On every re-layout ExoPlayer makes the timeBar interactive.
       // We need to disable it to keep scrubbing off.

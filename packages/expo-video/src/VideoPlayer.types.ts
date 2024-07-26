@@ -95,6 +95,12 @@ export declare class VideoPlayer extends SharedObject<VideoPlayerEvents> {
   staysActiveInBackground: boolean;
 
   /**
+   * @default false
+   * @platform android
+   */
+  showSubtitleButton: boolean;
+
+  /**
    * Initializes a new video player instance with the given source.
    * @hidden
    */
