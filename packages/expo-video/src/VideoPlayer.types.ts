@@ -95,6 +95,10 @@ export declare class VideoPlayer extends SharedObject<VideoPlayerEvents> {
   staysActiveInBackground: boolean;
 
   /**
+   * Determines whether the player should show the subtitle button. If set to `true` but now subtitle track is available,
+   * the button will be disabled but still shown.
+   * > On iOS this property is not supported as the user's accessibility settings determine whether subtitles are
+   * shown or not.
    * @default false
    * @platform android
    */
