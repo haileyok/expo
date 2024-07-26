@@ -6,6 +6,8 @@
 
 ### 🎉 New features
 
+- [Android] Add ability to toggle the subtitle button. ([]() by [@haileyok](https://github.com/haileyok))
+
 ### 🐛 Bug fixes
 
 - [iOS] Provide more image metadata in the result object. ([#29648](https://github.com/expo/expo/pull/29648) by [@vonovak](https://github.com/vonovak))
